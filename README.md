@@ -12,3 +12,7 @@ Small study software to search trends using Google Trends API
 
 - Add login
 - Save search preferences by user
+
+# UI
+
+![Interface](trends_analizer.png "Interface")
