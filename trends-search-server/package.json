@@ -8,7 +8,7 @@
     "debug": "DEBUG=trends-search-server:* nodemon --inspect ./bin/www",
     "test": "NODE_ENV=test mocha './controllers/*.js' './routes/*.js' './app.js'",
     "test-watch": "NODE_ENV=test mocha './controllers/*.js' './routes/*.js' './app.js' --watch --recursive",
-    "coverage": "NODE_ENV=test nyc --per-file --reporter=html npm test"
+    "coverage": "NODE_ENV=test nyc --per-file --reporter=text-lcov npm test | coveralls"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
