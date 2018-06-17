@@ -8,6 +8,7 @@ Small study software to search trends using Google Trends API
 - Filter by country and language
 - Present results in a chart 
 
+
 # Roadmap
 
 - Add login
