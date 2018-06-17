@@ -16,7 +16,9 @@
     "debug": "DEBUG=trends-search-server:* nodemon --inspect ./bin/www",
     "test": "NODE_ENV=test mocha './controllers/*.js' './routes/*.js' './app.js'",
     "test-watch": "NODE_ENV=test mocha './controllers/*.js' './routes/*.js' './app.js' --watch --recursive",
-    "coverage": "NODE_ENV=test nyc --per-file --reporter=text-lcov > coverage.lcov npm test"
+    "coverage": "NODE_ENV=test nyc --per-file --reporter=text-lcov > coverage.lcov npm test",
+    "pretest": "npm run lint",
+    "lint": "eslint **/*.js --ignore-pattern node_modules/"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -30,6 +32,12 @@
     "chai-as-promised": "^7.1.1",
     "codecov": "^3.0.2",
     "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.17.5",
     "nyc": "^12.0.2",
