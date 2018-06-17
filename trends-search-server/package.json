@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start-dev": "DEBUG=trends-search-server:* nodemon ./bin/www"
+    "start-dev": "DEBUG=trends-search-server:* nodemon ./bin/www",
+    "debug": "DEBUG=trends-search-server:* nodemon --inspect ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

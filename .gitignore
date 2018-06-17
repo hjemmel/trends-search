@@ -71,7 +71,7 @@ typings/
 # Editor-based Rest Client
 .idea/httpRequests
 ### VisualStudioCode template
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
