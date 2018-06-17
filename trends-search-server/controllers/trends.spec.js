@@ -8,7 +8,7 @@ chai.should();
 chai.use(chaiAsPromise);
 
 describe('Trends API search', () => {
-   let promise;
+  let promise;
 
   beforeEach('getting results', () => {
     promise = trends.getTrends();
