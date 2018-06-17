@@ -5,6 +5,7 @@ script:
   - cd trends-search-server
   - npm install
   - npm test
+  - npm run coverage
 after_success:
   - codecov
 
