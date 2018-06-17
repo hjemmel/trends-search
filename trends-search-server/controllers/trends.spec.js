@@ -20,16 +20,9 @@ describe('Trends API search', () => {
     it('Should return a json', () => {
         promise = trends.getTrends();
 
-        /*promise.then((result) => {
-            console.log(result);
-            done()
-        });*/
-
         return expect(promise).to.eventually.have.property('default')
             .that.has.property('rankedList')
-            .that.has.property('rankedKeyword')
-        // promise.should.be.a('Object');
-        // expect(promise).to.have.deep.property('thing.foo', 'bar');
+            .that.has.property('rankedKeywordd')
     });
 
 });
