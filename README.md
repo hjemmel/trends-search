@@ -1,4 +1,4 @@
-# trends-search [![Build Status](https://travis-ci.org/hjemmel/trends-search.svg?branch=master)](https://travis-ci.org/hjemmel/trends-search)
+# trends-search [![codecov](https://codecov.io/gh/hjemmel/trends-search/branch/master/graph/badge.svg)](https://codecov.io/gh/hjemmel/trends-search) [![Build Status](https://travis-ci.org/hjemmel/trends-search.svg?branch=master)](https://travis-ci.org/hjemmel/trends-search)
 Small study software to search trends using Google Trends API
 
 # Requirements
