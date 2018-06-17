@@ -22,7 +22,7 @@ describe('Trends API search', () => {
 
         return expect(promise).to.eventually.have.property('default')
             .that.has.property('rankedList')
-            .that.has.property('rankedKeywordd')
+            .that.has.property('rankedKeyword')
     });
 
 });
