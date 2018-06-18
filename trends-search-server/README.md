@@ -1,8 +1,8 @@
 # trends-search-server
 
 - Requirements:
-  - node >=8.9.4
-  - npm >=5.6.0
+  - node **>=8.9.4**
+  - npm **>=5.6.0**
   
 - Instalation:
   - Once node is installed just go into the folder trends-search-server and execute `npm install`
