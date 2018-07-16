@@ -2,7 +2,6 @@ module.exports = {
   parser: false,
   plugins: {
     'postcss-cssnext': {},
-    cssnano: {},
-    lost: {}
+    cssnano: {}
   }
 };

@@ -17,7 +17,7 @@ class Header extends React.Component {
       <div className={this.props.className}>
         <Navbar className={classes}>
           <NavbarGroup align={Alignment.LEFT}>
-            <NavbarHeading>Blueprint</NavbarHeading>
+            <NavbarHeading>Trends Analyzer</NavbarHeading>
           </NavbarGroup>
           <NavbarGroup align={Alignment.RIGHT}>
             <Button className={Classes.MINIMAL} icon='user' />

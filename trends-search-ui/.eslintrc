@@ -1,5 +1,8 @@
 {
     "extends": ["standard", "standard-react"],
+    "env": {
+      "jest": true
+    },
     "rules": {
         "semi": ["error", "always"]
     }
