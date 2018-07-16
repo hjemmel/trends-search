@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render properly 1`] = `
+<div>
+  <Blueprint2.Navbar
+    className="bp3-dark bp3-fixed-top"
+  >
+    <Blueprint2.NavbarGroup
+      align="left"
+    >
+      <Blueprint2.NavbarHeading>
+        Trends Analyzer
+      </Blueprint2.NavbarHeading>
+    </Blueprint2.NavbarGroup>
+    <Blueprint2.NavbarGroup
+      align="right"
+    >
+      <Blueprint2.Button
+        className="bp3-minimal"
+        icon="user"
+      />
+      <Blueprint2.Button
+        className="bp3-minimal"
+        icon="notifications"
+      />
+      <Blueprint2.Button
+        className="bp3-minimal"
+        icon="cog"
+      />
+    </Blueprint2.NavbarGroup>
+  </Blueprint2.Navbar>
+</div>
+`;
