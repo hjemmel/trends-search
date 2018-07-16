@@ -1,0 +1,14 @@
+.home {
+    display: flex;
+    flex: 1;
+}
+
+.main {
+    flex: 3;
+    background-color: lightgray;
+}
+
+.options {
+    flex: 1;
+    background-color: antiquewhite;
+}
