@@ -1,17 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
-
+import BarChart from '../../../components/BarChart';
 import Home from '../index';
 
 describe('<Home />', () => {
-  it('should render properly', () => {
-    const renderedComponent = shallow(<Home />);
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+  let renderedComponent;
+
+  beforeEach(() => {
+    renderedComponent = shallow(<Home />);
+  });
+
+  it('should be defined', () => {
+    expect(renderedComponent).toBeDefined();
   });
 
   it('should render the header', () => {
-    const renderedComponent = shallow(<Home />);
-    expect(renderedComponent.contains('hans')).toBeTruthy();
+    expect(renderedComponent.find(BarChart)).toBeTruthy();
   });
 });

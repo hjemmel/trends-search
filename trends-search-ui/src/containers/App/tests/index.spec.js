@@ -1,24 +1,28 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
 import Header from '../../../components/Header';
 import Home from '../../../containers/Home';
 import App from '../index';
 
 describe('<App />', () => {
-  it('should render properly', () => {
-    const renderedComponent = shallow(<App />);
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+  let renderedComponent;
+
+  beforeEach(() => {
+    renderedComponent = shallow(<Header />);
+  });
+
+  it('should be defined', () => {
+    expect(renderedComponent).toBeDefined();
   });
 
   it('should render the header', () => {
-    const renderedComponent = shallow(<App />);
+    renderedComponent = shallow(<App />);
     expect(renderedComponent.find(Header).length).toBe(1);
   });
 
   it('should render the home', () => {
-    const renderedComponent = shallow(<App />);
+    renderedComponent = shallow(<App />);
     expect(renderedComponent.find(Home).length).toBe(1);
   });
 });
