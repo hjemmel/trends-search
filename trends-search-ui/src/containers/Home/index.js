@@ -11,7 +11,7 @@ class Home extends React.Component {
     loadTrends();
   }
 
-  render (props) {
+  render () {
     return (
       <div className='home'>
         <div className='main'>

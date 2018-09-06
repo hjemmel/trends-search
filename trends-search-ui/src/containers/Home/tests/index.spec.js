@@ -1,13 +1,24 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import shallowWithStore from '../../redux-enzyme-swallow';
 import BarChart from '../../../components/BarChart';
 import Home from '../index';
+import reducer from '../reducer';
+import configureStore from 'redux-mock-store';
 
 describe('<Home />', () => {
   let renderedComponent;
+  let store;
+  const initialState = {home: {
+    loading: false,
+    error: false,
+    trends: []
+  }};
 
   beforeEach(() => {
-    renderedComponent = shallow(<Home />);
+    const mockStore = configureStore();
+    store = mockStore(initialState);
+
+    renderedComponent = shallowWithStore(<Home />, store);
   });
 
   it('should be defined', () => {
